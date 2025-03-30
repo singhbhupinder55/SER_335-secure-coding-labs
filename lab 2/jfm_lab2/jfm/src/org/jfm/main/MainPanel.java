@@ -177,6 +177,7 @@ public class MainPanel extends JPanel {
 	AddUserAction addUser = new AddUserAction();
 	addNewUser.addActionListener(addUser);
 
+		// Task H3 - Step 1 & 2: Change password button only visible for roles with 'ChangePassword' privilege
 	JButton changePwdButton = new JButton("Change Password");
 	ChangePasswordAction changePasswordAction = new ChangePasswordAction();
 	changePwdButton.addActionListener(changePasswordAction);
@@ -212,23 +213,24 @@ public class MainPanel extends JPanel {
 			}
 		}
 
+		// Task H2 - Step 1: Get privileges for the userRole
 		for (int i = 0; rpm != null && i < rpm.length; i++) {
 	    System.out.println("Privileges for " + userRole + " role: " + rpm[i] + i);
 
 		String priv = rpm[i].toLowerCase();
-
+			// Task H2 - Step 2: Display buttons based on privileges
 		if (priv.equals("view")) {
-			buttons.addElement(f3Button);
+			buttons.addElement(f3Button); // Task H2
 		} else if (priv.equals("edit")) {
-			buttons.addElement(f4Button);
+			buttons.addElement(f4Button); // Task H2
 		} else if (priv.equals("copy")) {
-			buttons.addElement(f5Button);
+			buttons.addElement(f5Button); // Task H2
 		} else if (priv.equals("move")) {
-			buttons.addElement(f6Button);
+			buttons.addElement(f6Button); // Task H2
 		} else if (priv.equals("mkdir")) {
-			buttons.addElement(f7Button);
+			buttons.addElement(f7Button); // Task H2
 		} else if (priv.equals("adduser")) {
-			buttons.addElement(addNewUser);
+			buttons.addElement(addNewUser); // Task H2
 		} else if (priv.equals("changepassword")) {
 			buttons.addElement(changePwdButton);
 		}

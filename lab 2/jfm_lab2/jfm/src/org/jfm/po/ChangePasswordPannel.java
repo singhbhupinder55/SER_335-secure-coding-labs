@@ -113,29 +113,27 @@ public class ChangePasswordPannel extends JFrame implements ActionListener {
 		// String userName = (String) roleList.getSelectedItem();
 		String password = String.valueOf(fieldPassword.getPassword()).trim();;
 		String role = (String) roleList.getSelectedItem();
-		
-		// TODO: for you to complete!
-		//JOptionPane.showMessageDialog(null, "NOT IMPLEMENTED YET!!");
-           //Step a: Check for empty fields
+
+		// Task H3 - Step 4a: Check for empty fields
 		if (userName.isEmpty() || password.isEmpty() || role.isEmpty()) {
 			JOptionPane.showMessageDialog(this, "All fields are required.", "Error", JOptionPane.ERROR_MESSAGE);
 			return;
 		}
 
 		try {
-			//Step b: Check if user exists
+			// Task H3 - Step 4b: Check if user exists
 			if (!UsersSingleton.getUserPasswordMapping().containsKey(userName)) {
 				JOptionPane.showMessageDialog(this, "User does not exist.", "Error", JOptionPane.ERROR_MESSAGE);
 				return;
 			}
 
-			// Step c: Check if role matches
+			// Task H3 - Step 4c: Check if role matches
 			if (!UsersSingleton.getUserRoleMapping().get(userName).equals(role)) {
 				JOptionPane.showMessageDialog(this, "Role does not match the user's current role.", "Error", JOptionPane.ERROR_MESSAGE);
 				return;
 			}
 
-			// Step d: Update password
+			// Task H3 - Step 5: Update password using UsersSingleton
 			boolean updated = UsersSingleton.updateUserPassword(userName, password, role);
 
 			if (updated) {

@@ -150,23 +150,23 @@ public class LoginPannel extends JFrame implements ActionListener {
 	}
 
 
-	// Login Validation
+			// Task H1: Implement authentication for login
 	public boolean validateUser(String uName, String pwd, String role) {
 
 		try {
-			// Check role match
+
+			// Task H1 - Step 1: Check if user exists and role matches
 			if (!UsersSingleton.getUserRoleMapping().containsKey(uName)) return false;
 			if (!UsersSingleton.getUserRoleMapping().get(uName).equals(role)) return false;
 
-			// Get salt for user
+			// Task H1 - Step 3a: Generate salt and hash the input password
 			SaltsSingleton salts = SaltsSingleton.getUserSalts();
 			String salt = salts.getUserSalt(uName);
 			if (salt == null) return false;
 
-			// Hash the password using salt
 			long hashed = SipHasher.hash(salt.getBytes(), pwd.getBytes());
 
-			// Compare with stored hash
+			// Task H1 - Step 3b: Compare hashed password with stored password
 			if (!UsersSingleton.getUserPasswordMapping().containsKey(uName)) return false;
 			long storedHash = Long.parseLong(UsersSingleton.getUserPasswordMapping().get(uName));
 

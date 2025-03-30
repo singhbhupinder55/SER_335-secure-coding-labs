@@ -56,8 +56,9 @@ public final class UsersSingleton {
 		return Collections.unmodifiableMap(userPasswordMapping);
 	}
 
+	// Task H3 - Helper: Overloaded method to rewrite the full authentication.json file after password update
 	private static final void writeAuthFile(List<User> users) throws IOException {
-		// 🔹 CHANGED: Overloaded method for writing full updated list
+		//Overloaded method for writing full updated list
 		ObjectMapper mapper = new ObjectMapper();
 		mapper.writeValue(new File(CommonConstants.AUTHENTICATION_FILE), users);
 	}
@@ -112,7 +113,7 @@ public final class UsersSingleton {
 		return rval;
 	}
 
-	// 🔹 CHANGED: New method for updating an existing user's password
+	// Task H3 - Step 5: Method to update existing user's password with new salt and persist to JSON
 	public static final boolean updateUserPassword(String userName, String newPassword, String role) throws Exception {
 		if (!userPasswordMapping.containsKey(userName)) return false;
 		if (!userRoleMapping.containsKey(userName)) return false;
