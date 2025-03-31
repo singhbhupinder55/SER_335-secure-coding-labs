@@ -88,6 +88,11 @@ Included in `bsingh55_part4.zip`.
 ⚠️ Note:
 Wireshark did not capture packets on Mac due to Docker Desktop’s networking limitations on ARM-based machines. As a fallback, `tcpdump` was used successfully to demonstrate spoofed replies and ICMP traffic.
 
+
+──────────────────────────────────────────
+GitHub Repository for Full Project View:
+📎 https://github.com/singhbhupinder55/SER_335/tree/main/lab%202
+──────────────────────────────────────────
 ──────────────────────────────────────────
 Let me know if any clarification is needed.
 Thank you!
