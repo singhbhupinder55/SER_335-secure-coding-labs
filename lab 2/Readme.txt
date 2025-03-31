@@ -64,3 +64,33 @@ Credentials for Testing (from provided JSON files):
 • User: tim      | Role: user      | Pass: 123456
 
 ===========================================
+
+Course: SER 335 – Lab 2  
+
+──────────────────────────────────────────
+PART II – NETWORK SECURITY (Sniffing & Spoofing)
+──────────────────────────────────────────
+Included in `bsingh55_part4.zip`.
+
+✔ Task N1 – Sniffing & Spoofing examples with prevention techniques  
+✔ Task N2 – Packet capture using `sniffer.py` and filtering criteria:  
+   - ICMP  
+   - TCP from 10.9.0.5 to port 23  
+   - Packets involving 173.194.208.0/24  
+✔ Task N3 – Spoofing ICMP packets from attacker1 and attacker2  
+✔ Task N4 – Combined sniff-and-then-spoof implementation using `taskn4.py`
+
+📁 Folder Structure (inside bsingh55_part4.zip):
+- `task_n.md` – Answers, analysis, and inline screenshots for Tasks N1–N4  
+- `taskn4.py` – Python script for sniff-and-then-spoof logic  
+- `n2/`, `n3/`, `n4/` – Clear screenshots of terminal output and tcpdump results for each task  
+
+⚠️ Note:
+Wireshark did not capture packets on Mac due to Docker Desktop’s networking limitations on ARM-based machines. As a fallback, `tcpdump` was used successfully to demonstrate spoofed replies and ICMP traffic.
+
+──────────────────────────────────────────
+Let me know if any clarification is needed.
+Thank you!
+──────────────────────────────────────────
+
+

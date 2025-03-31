@@ -6,5 +6,5 @@ filterCriteria= sys.argv[1]
 
 def print_pkt(pkt):
 	pkt.show()
-pkt = sniff(iface='br-46fb5e9db317', filter= filterCriteria, prn=print_pkt)
+pkt = sniff(iface='br-db6b52625ca2', filter= filterCriteria, prn=print_pkt)
 
