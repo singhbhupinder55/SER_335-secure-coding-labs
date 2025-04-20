@@ -1,0 +1,14 @@
+[
+  {
+    "role": "admin",
+    "whitelist": ["ls", "pwd", "date", "whoami"]
+  },
+  {
+    "role": "developer",
+    "whitelist": ["ls", "pwd", "echo"]
+  },
+  {
+    "role": "user",
+    "whitelist": ["pwd"]
+  }
+]
