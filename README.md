@@ -32,7 +32,7 @@ SER 335 focused on secure programming techniques, emphasizing secure software de
 ## 🛠️ Technologies Used
 
 - Java 18
-- Eclipse IDE
+- Eclipse, IntelliJ IDE
 - SpotBugs + FindSecurityBugs
 - Kali Linux (Metasploit, sqlmap, Wireshark)
 - Docker (BadStore VM)
