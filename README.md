@@ -50,6 +50,13 @@ SER 335 focused on secure programming techniques, emphasizing secure software de
 
 **Bhupinder Singh**  
 Senior Software Engineering Student @ ASU  
-bsingh55@asu.edu | GitHub: [@singhbhupinder55](https://github.com/singhbhupinder55)
+🔗 **Check out my full portfolio:**  
+[https://singhbhupinder55.github.io](https://singhbhupinder55.github.io)
+
+📫 **Connect with me:**  
+[LinkedIn – Bhupinder Singh](https://www.linkedin.com/in/bhupinder-singh-asu/)  
+[GitHub – @singhbhupinder55](https://github.com/singhbhupinder55)
+
+
 
 ---
