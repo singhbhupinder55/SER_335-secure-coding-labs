@@ -38,6 +38,14 @@ SER 335 focused on secure programming techniques, emphasizing secure software de
 - Docker (BadStore VM)
 - Git, GitHub
 
+## 🧠 Key Skills Gained
+
+- Implemented salted password authentication and RBAC securely
+- Conducted secure code reviews using SEI CERT standards
+- Used SpotBugs/FindSecurityBugs to detect vulnerabilities in Java code
+- Executed SQL Injection and brute-force attacks in a safe lab environment
+- Applied defensive programming and exception handling practices
+
 ## 👨‍💻 Author
 
 **Bhupinder Singh**  
